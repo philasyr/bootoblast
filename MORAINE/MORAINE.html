@@ -1,0 +1,1174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MORAINE | BOOTOBLAST</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="MORAINE.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
+    
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.hero-image {
+  background-image: url("MORAINE.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+::selection {
+    color: #000f1d;
+    background: #a8f6ff;
+}
+	  .affix {
+      top: 25px;
+  }
+  </style>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+</script>
+
+</head>
+<body data-spy="scroll" data-target="#spy" data-offset="15">
+<div class="hero-image">
+<div class="hero-text">
+<h1 style="font-size:130px; line-height:.8">MORAINE</h1>
+<p style="font-size: 20px">A Bootstrap style sheet dedicated to Banff, AB.</p>
+  <button type="button" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD</button>
+  
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+   <i class="fa fa-bars" aria-hidden="true"></i> ELEMENTS <span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+      <li><a href="#NAVIGATION">NAVIGATION</a></li>
+      <li><a href="#TYPOGRAPHY">TYPOGRAPHY</a></li>
+      <li><a href="#BUTTONS">BUTTONS & DROPDOWNS</a></li>
+      <li><a href="#CONTAINERS">CONTAINERS</a></li>
+      <li><a href="#INPUTS">INPUTS & FORMS</a></li>
+      <li><a href="#DATA">DATA VISUALIZATION</a></li>
+    </ul>
+</div>
+</div>
+</div>
+<div class="row" style="max-width: 1600px; margin: 0 auto">
+<nav class="col-sm-2" id="spy">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+      <li><a href="#NAVIGATION">NAVIGATION</a></li>
+      <li><a href="#TYPOGRAPHY">TYPOGRAPHY</a></li>
+      <li><a href="#BUTTONS">BUTTONS & DROPDOWNS</a></li>
+      <li><a href="#CONTAINERS">CONTAINERS</a></li>
+      <li><a href="#INPUTS">INPUTS & FORMS</a></li>
+      <li><a href="#DATA">DATA VISUALIZATION</a></li>
+      </ul>
+    </nav>
+<div class="col-sm-10">
+<!-- NAVIGATION -->
+<div class="row" style="padding-bottom: 150px">
+<div class="col-sm-12" style="float: none; margin: 0 auto" id="NAVIGATION">
+<br><h1 style="font-size: 60px">NAVIGATION</h1>
+
+<!-- NAVBARS -->
+<div class="col-sm-8">
+<h4>NAVBARS</h4>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+	  <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MORAINE</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-tree" aria-hidden="true"></i> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+	  <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MORAINE</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-tree" aria-hidden="true"></i> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+<!-- BREADCRUMBS -->
+<div class="col-sm-4">
+<h4>BREADCRUMBS</h4>
+ <ul class="breadcrumb">
+  <li class="active">Banff</li>
+</ul>
+
+<ul class="breadcrumb">
+  <li><a href="#">Banff</a></li>
+  <li class="active">Alberta</li>
+</ul>
+
+<ul class="breadcrumb">
+  <li><a href="#">Banff</a></li>
+  <li><a href="#">Alberta</a></li>
+  <li class="active">Canada</li>
+</ul>
+</div>
+
+<!-- LABELS -->
+<div class="col-sm-5">
+<h4>LABELS</h4>
+<span class="label label-default">Default Label</span>
+<span class="label label-primary">Primary Label</span>
+<span class="label label-success">Success Label</span>
+<span class="label label-info">Info Label</span>
+<span class="label label-warning">Warning Label</span>
+<span class="label label-danger">Danger Label</span>
+<h2>Example <span class="label label-default">New</span></h2>
+<h4>Example <span class="label label-default">New</span></h4>
+<h4>Example <span class="label label-default">New</span></h4>
+<h5>Example <span class="label label-default">New</span></h5>
+<h6>Example <span class="label label-default">New</span></h6>
+</div>
+
+<!-- PAGINATION -->
+<div class="col-sm-3">
+<h4>PAGINATION</h4>
+<ul class="pagination pagination-sm">
+  <li><a href="#">1</a></li>
+  <li class="active"><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li class="disabled"><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+
+<ul class="pagination">
+  <li><a href="#">1</a></li>
+  <li class="active"><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li class="disabled"><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+
+<ul class="pagination pagination-lg">
+  <li><a href="#">1</a></li>
+  <li class="active"><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li class="disabled"><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+</div>
+
+<!-- BADGES -->
+<div class="col-sm-3">
+<h4>BADGES</h4>
+<a href="#">News <span class="badge">5</span></a><br>
+<a href="#">Comments <span class="badge">10</span></a><br>
+<a href="#">Updates <span class="badge">2</span></a><br>
+<button type="button" class="btn btn-primary" style="margin-top: 15px">Primary <span class="badge">7</span></button>
+
+<h4>PAGER</h4>
+<ul class="pager">
+  <li><a href="#"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Previous</a></li>
+  <li><a href="#">Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- TYPOGRAPHY -->
+<div class="row" style="padding-bottom: 150px">
+<div class="col-sm-12" style="float: none; margin: 0 auto" id="TYPOGRAPHY">
+<br><h1 style="font-size: 60px">TYPOGRAPHY</h1>
+
+<!-- BODY COPY -->
+<div class="col-sm-12">
+<h4>BODY COPY</h4>
+	<p style="max-width: 750px"><mark>Banff National Park</mark> Canada's oldest national park, established in 1885 in the Rocky Mountains. Within Banff is Moraine Lake - a glacially fed lake in Banff National Park, outside the Village of Lake Louise, Alberta, Canada.</p>
+</div>
+
+<!-- HEADINGS -->
+<div class="col-sm-4">
+ <h4>HEADINGS</h4>
+  <h1>h1 Banff (45px)</h1>
+  <h2>h2 Banff (40px)</h2>
+  <h4>h3 Banff (36px)</h4>
+  <h4>h4 Banff (28px)</h4>
+  <h5>h5 Banff (20px)</h5>
+  <h6>h6 Banff (14px)</h6>
+</div>
+
+<!-- CONTEXTUAL COLORS -->
+<div class="col-sm-4">
+<h4>CONTEXTUAL COLORS</h4>
+  <p class="text-primary">This text is important.</p>
+  <p class="text-success">This text indicates success.</p>
+  <p class="text-info">This text represents some information.</p>
+  <p class="text-warning">This text represents a warning.</p>
+  <p class="text-danger">This text represents danger.</p>
+  <p class="bg-primary">This text is important.</p>
+  <p class="bg-success">This text indicates success.</p>
+  <p class="bg-info">This text represents some information.</p>
+  <p class="bg-warning">This text represents a warning.</p>
+  <p class="bg-danger">This text represents danger.</p>
+</div>
+
+<!-- BLOCKQUOTE -->
+<div class="col-sm-4">
+<h4>BLOCKQUOTE</h4>
+<blockquote>
+	<p>Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean. </p>
+  <h6>- John Muir</h6>
+</blockquote>
+</div>
+
+<!-- ICONS -->
+<div class="col-sm-12" style="color: #a8f6ff; padding-bottom: 50px">
+<h4>ICONS (<a href="http://fontawesome.io/" target="_blank">FontAwesome</a>)</h4>
+<div class="col-sm-1"><i class="fa fa-grav fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-cogs fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-map-pin fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-user fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-thermometer fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-telegram fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-flag fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-battery fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-heartbeat fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-arrows fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-anchor fa-3x" aria-hidden="true"></i></div>
+</div>
+<div class="col-sm-12" style="color: #a8f6ff; padding-bottom: 50px">
+<div class="col-sm-1"><i class="fa fa-exclamation-triangle fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-lemon-o fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-life-ring fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-low-vision fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-object-group fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-plug fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-shopping-bag fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-sun-o fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-ambulance fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-google-wallet fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-pie-chart fa-3x" aria-hidden="true"></i></div>
+</div>
+<div class="col-sm-12" style="color: #a8f6ff; padding-bottom: 50px">
+<div class="col-sm-1"><i class="fa fa-btc fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-snowflake-o fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-spoon fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-star-half fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-bath fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-hourglass-half fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-gift fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-wheelchair-alt fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-file fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-trello fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-volume-off fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-quora fa-3x" aria-hidden="true"></i></div>
+</div>
+<div class="col-sm-12" style="color: #a8f6ff; padding-bottom: 50px">
+<div class="col-sm-1"><i class="fa fa-hand-peace-o fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-compress fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-mars fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-motorcycle fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-soccer-ball-o fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-medkit fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-rebel fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-trophy fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-cc fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-wrench fa-3x" aria-hidden="true"></i></div>
+</div>
+<div class="col-sm-12" style="color: #a8f6ff; padding-bottom: 50px">
+<div class="col-sm-1"><i class="fa fa-heart fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-space-shuttle fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-medium fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-tree fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-thumbs-down fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-eercast fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-hand-o-right fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-pagelines fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-pause fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-area-chart fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-dot-circle-o fa-3x" aria-hidden="true"></i></div>
+<div class="col-sm-1"><i class="fa fa-file-text fa-3x" aria-hidden="true"></i></div>
+</div>
+</div>
+</div>
+
+<!-- BUTTONS & DROPDOWNS -->
+<div class="row" style="padding-bottom: 150px">
+<div class="col-sm-12" style="float: none; margin: 0 auto" id="BUTTONS">
+<br><h1 style="font-size: 60px">BUTTONS & DROPDOWNS</h1>
+<div class="row">
+<div class="col-sm-6" style="margin-bottom: 15px">
+<h4>BUTTONS</h4>
+<button type="button" class="btn">Basic</button>
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<h4>BUTTON GROUPS</h4>
+<div class="btn-group">
+  <button type="button" class="btn">Basic</button>
+  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Castle Mountain</a></li>
+    <li><a href="#">Moraine Lake</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Castle Mountain</a></li>
+    <li><a href="#">Moraine Lake</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Castle Mountain</a></li>
+    <li><a href="#">Moraine Lake</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Castle Mountain</a></li>
+    <li><a href="#">Moraine Lake</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Castle Mountain</a></li>
+    <li><a href="#">Moraine Lake</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Castle Mountain</a></li>
+    <li><a href="#">Moraine Lake</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Castle Mountain</a></li>
+    <li><a href="#">Moraine Lake</a></li>
+  </ul>
+</div>
+<div class="btn-group btn-group-justified" style="padding-bottom: 10px; margin-top: 15px">
+  <a href="#" class="btn btn-primary">Button Group 1</a>
+  <a href="#" class="btn btn-primary">Button Group 2</a>
+  <a href="#" class="btn btn-primary">Button Group 3</a>
+</div>
+</div>
+<!-- VERTICAL BUTTONS -->
+<div class="col-sm-2">
+<h4>VERTICAL BUTTONS</h4>
+	<div align="center" class="btn-group-vertical">
+    <a href="#" class="btn btn-default">Vertical Button</a>
+    <a href="#" class="btn btn-default">Vertical Button</a>
+    <a href="#" class="btn btn-default">Vertical Button</a>
+    <a href="#" class="btn btn-default">Vertical Button</a>
+</div>
+</div>
+
+<div class="col-sm-4">
+<h4>POPOVERS</h4>
+<button type="button" class="btn btn-default btn-lg" data-container="body" data-toggle="popover" data-placement="left" data-content="Is that a grizzly bear?" data-original-title="" title="">Left</button>
+&nbsp;
+<button type="button" class="btn btn-default btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="Is that a grizzly bear?" data-original-title="" title="">Top</button>
+&nbsp;
+<button type="button" class="btn btn-default btn-lg" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Is that a grizzly bear?" data-original-title="" title="">Bottom</button>
+&nbsp;
+<button type="button" class="btn btn-default btn-lg" data-container="body" data-toggle="popover" data-placement="right" data-content="Is that a grizzly bear?" data-original-title="" title="">Right</button>
+
+<h4>TOOLTIPS</h4>
+<button type="button" class="btn btn-default btn-lg" data-toggle="tooltip" data-placement="left" title="" data-original-title="Pine trees on the left.">Left</button>
+&nbsp;
+<button type="button" class="btn btn-default btn-lg" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pine trees on the top.">Top</button>
+&nbsp;
+<button type="button" class="btn btn-default btn-lg" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Pine trees on the bottom.">Bottom</button>
+&nbsp;
+<button type="button" class="btn btn-default btn-lg" data-toggle="tooltip" data-placement="right" title="" data-original-title="Pine trees on the right.">Right</button>
+</div>
+</div>
+<div class="row">
+<!-- BUTTON SIZES & TOOLBARS -->
+<div class="col-sm-6">
+<h4>BUTTON SIZES</h4>
+<button type="button" class="btn btn-default btn-lg" style="margin-bottom: 10px">Large Button</button>
+<button type="button" class="btn btn-default btn-md">Medium Button</button>
+<button type="button" class="btn btn-default btn-sm">Small Button</button>
+<button type="button" class="btn btn-default btn-xs">XSmall Button</button>
+
+<h4>BUTTON TOOLBARS</h4>
+<div class="btn-toolbar">
+  <div class="btn-group">
+    <a href="#" class="btn btn-default">1</a>
+    <a href="#" class="btn btn-default">2</a>
+    <a href="#" class="btn btn-default">3</a>
+    <a href="#" class="btn btn-default">4</a>
+  </div>
+
+  <div class="btn-group">
+    <a href="#" class="btn btn-default">5</a>
+    <a href="#" class="btn btn-default">6</a>
+    <a href="#" class="btn btn-default">7</a>
+    <a href="#" class="btn btn-default">8</a>
+    <a href="#" class="btn btn-default">9</a>
+  </div>
+
+  <div class="btn-group">
+    <a href="#" class="btn btn-default">10</a>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- CONTAINERS -->
+<div class="row">
+<div class="col-sm-12" style="float: none; margin: 0 auto; padding-bottom: 150px" id="CONTAINERS">
+<br><h1 style="font-size: 60px">CONTAINERS</h1>
+
+<div class="row">
+<!-- JUMBOTRON -->
+<div class="container" style="width: 100%">
+ <h4>JUMBOTRON</h4>
+  <div class="jumbotron">
+    <h1><i class="fa fa-tree" aria-hidden="true"></i> JUMBOTRON</h1> 
+    <p>This jumbotron is made of 100% pine wood.</p>
+    <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Fresh Air</button> 
+  </div>
+</div>
+</div>
+
+<div class="row">
+<!-- WELLS -->
+<div class="col-sm-4">
+<h4>WELLS</h4>
+<div class="well well-sm">Li'l Well</div>
+<div class="well">Regular Ol' Well</div>
+<div class="well well-lg">Big Guy Well</div>
+</div>
+
+<!-- ALERTS -->
+<div class="col-sm-8">
+<h4>ALERTS</h4>
+<div class="alert alert-success">
+  <strong>Success!</strong> my canoe still floats!
+</div>
+
+<div class="alert alert-info">
+  <strong>Info!</strong> Here's some info on the weather.
+</div>
+
+<div class="alert alert-warning">
+  <strong>Warning!</strong> It may rain later.
+</div>
+
+<div class="alert alert-danger">
+  <strong>Danger!</strong> That grizzly's comin' right for you!
+</div>
+</div>
+</div>
+
+<div class="row">
+<!-- PANELS -->
+<div class="col-sm-6">
+<h4>PANELS</h4>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel primary</h4>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel success</h4>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel warning</h4>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel danger</h4>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel info</h4>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+</div>
+
+<!-- LIST GROUPS -->
+<div class="col-sm-6">
+<h4>LIST GROUPS</h4>
+<div class="list-group">
+  <a href="#" class="list-group-item active">First item</a>
+  <a href="#" class="list-group-item">Second item</a>
+  <a href="#" class="list-group-item disabled">Third item (disabled)</a>
+</div>
+
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    <h4 class="list-group-item-heading">First List Group Item Heading</h4>
+    <p class="list-group-item-text">List Group Item Text</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">Second List Group Item Heading</h4>
+    <p class="list-group-item-text">List Group Item Text</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">Third List Group Item Heading</h4>
+    <p class="list-group-item-text">List Group Item Text</p>
+  </a>
+</div>
+
+<h4>MODAL</h4>
+ <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Let's Go For a Hike.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="row">
+<!-- TABS -->
+<div class="col-sm-4">
+<h4>TABS</h4>	
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#home" data-toggle="tab" aria-expanded="true">Banff</a></li>
+  <li class=""><a href="#profile" data-toggle="tab" aria-expanded="false">About</a></li>
+  <li class="disabled"><a href="#">Disabled</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Geography <span class="caret"></span>
+    </a>
+<ul class="dropdown-menu">
+      <li><a href="#dropdown1" data-toggle="tab">Lake Louise</a></li>
+      <li><a href="#dropdown2" data-toggle="tab">Peyto Glacier</a></li>
+      <li><a href="#dropdown3" data-toggle="tab">Mistaya River</a></li>
+    </ul>
+  </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade active in" id="home">
+    <p>Banff National Park /ˈbæmf/ is Canada's oldest national park, established in 1885 in the Rocky Mountains. The park, located west of Calgary in the province of Alberta, encompasses 6,641 square kilometres (2,564 sq mi) of mountainous terrain, with numerous glaciers and ice fields, dense coniferous forest, and alpine landscapes. The Icefields Parkway extends from Lake Louise, connecting to Jasper National Park in the north. Provincial forests and Yoho National Park are neighbours to the west, while Kootenay National Park is located to the south and Kananaskis Country to the southeast.
+
+</p>
+  </div>
+  <div class="tab-pane fade" id="profile">
+    <p>Throughout its history, Banff National Park has been shaped by tension between conservationist and land exploitation interests. The park was established on 25 November 1885 as Banff Hot Springs Reserve, in response to conflicting claims over who discovered hot springs there, and who had the right to develop the hot springs for commercial interests. The conservationists prevailed when Prime Minister John A. Macdonald set aside the hot springs as a small protected reserve, which was later expanded to include Lake Louise and other areas extending north to the Columbia Icefield.
+</p>
+  </div>
+  <div class="tab-pane fade" id="dropdown1">
+    <p>Lake Louise, named Lake of the Little Fishes by the Stoney Nakota First Nations people, is a glacial lake within Banff National Park in Alberta, Canada. It is located 5 km (3.1 mi) west of the Hamlet of Lake Louise and the Trans-Canada Highway (Highway 1). The emerald colour of the water comes from rock flour carried into the lake by melt-water from the glaciers that overlook the lake. The lake has a surface of 0.8 km2 (0.31 sq mi) and is drained through the 3 km long Louise Creek into the Bow River.
+</p>
+  </div>
+  
+  <div class="tab-pane fade" id="dropdown2">
+    <p>The Peyto Glacier is situated in the Canadian Rockies in Banff National Park, Alberta, Canada, approximately 90 km (56 mi) northwest of the town of Banff, and can be accessed from the Icefields Parkway. Peyto Glacier is an outflow glacier from the Wapta Icefield, which rests along the Continental divide. The glacier snout is subject to high melt rates from season to season and there is marked surface lowering on several parts of the glacier. Glacial silt, which is carried from the glacier by streams, ensures a turquoise appearance to Peyto Lake, a popular tourist destination.</p>
+  </div>
+  
+  <div class="tab-pane fade" id="dropdown3">
+    <p>The Mistaya River is a short river in western Alberta, Canada. It flows through the Canadian Rockies, and a section of the Icefields Parkway was built along its course. Mistaya River originates in Peyto Lake, a glacial lake of typical blue colour (due to rock flour). Mistaya flows north-west, receiving the waters of creeks such as Delta, Silverhorn, Cirque, Noyes, ChephrenTotem, Epaulette, Bison, Kaufmann and Sarback. A series of elongated lakes are formed along the river: Mistaya Lake and Waterfowl Lakes.</p>
+  </div>
+</div>	
+</div>
+
+<!-- PILLS -->
+<div class="col-sm-4">
+<h4>PILLS</h4>
+<ul class="nav nav-pills nav-stacked">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li class="disabled"><a href="#">Disabled</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Geography <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#dropdown1" data-toggle="tab">Lake Louise</a></li>
+      <li><a href="#dropdown2" data-toggle="tab">Peyto Glacier</a></li>
+      <li><a href="#dropdown3" data-toggle="tab">Mistaya River</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<!-- ACCORDIONS -->
+<div class="col-sm-4">
+<h4>ACCORDIONS</h4>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Active Collapsible Group</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">Hey, who opened me?</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Closed Collapsible Group 1</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Now I'm open. Blast!</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+       <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Closed Collapsible Group 2</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">And now I'm open.</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- FORMS & INPUTS -->
+<div class="row" style="padding-bottom: 150px">
+<div class="col-sm-12" style="float: none; margin: 0 auto" id="INPUTS">
+<br><h1 style="font-size: 60px">FORMS & INPUTS</h1>
+
+<!-- FORMS -->
+<div class="col-sm-5">
+<h4>FORMS</h4>
+<div class="well">
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+  <label for="exampleInputTextArea">Textarea</label>
+  <textarea class="form-control" rows="3" placeholder="Textarea"></textarea>
+  
+    <label for="sel1">Select list:</label>
+  <select class="form-control" id="sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+  <br>
+  <label for="sel2">Mutiple select list (hold shift to select more than one):</label>
+      <select multiple class="form-control" id="sel2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+  
+	</div>
+  
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <div class="radio">
+  <label><input type="radio" name="optradio">Breaker Breaker</label>
+</div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="dismiss" class="btn">Cancel</button>
+</form>
+</div>
+</div>
+
+<!-- INPUTS -->
+<div class="col-sm-7">
+<h4>INPUTS</h4>
+<div class="well">
+<h5>INPUT GROUPS</h5>
+     <form>
+  <div class="input-group" style="margin-bottom: 5px">
+    <span class="input-group-addon"><i class="fa fa-at" aria-hidden="true"></i></span>
+    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+  </div>
+  <div class="input-group" style="margin-bottom: 5px">
+    <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+  </div>
+  <div class="input-group" style="margin-bottom: 5px">
+    <span class="input-group-addon">Text</span>
+    <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+  </div>
+</form> 
+      <h5>CONTROL STATES</h5>
+      <form class="form-horizontal">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Focused</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="focusedInput" type="text" value="Click to focus">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="col-sm-2 control-label">Disabled</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="disabledInput" type="text" disabled>
+    </div>
+  </div>
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="disabledTextInput" class="col-sm-2 control-label">Fieldset disabled</label>
+      <div class="col-sm-10">
+        <input type="text" id="disabledTextInput" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="disabledSelect" class="col-sm-2 control-label"></label>
+      <div class="col-sm-10">
+        <select id="disabledSelect" class="form-control">
+          <option>Disabled select</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group has-success has-feedback">
+    <label class="col-sm-2 control-label" for="inputSuccess">
+    Input with success and icon</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputSuccess">
+      <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+    </div>
+  </div>
+  <div class="form-group has-warning has-feedback">
+    <label class="col-sm-2 control-label" for="inputWarning">
+    Input with warning and icon</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputWarning">
+      <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+    </div>
+  </div>
+  <div class="form-group has-error has-feedback">
+    <label class="col-sm-2 control-label" for="inputError">
+    Input with error and icon</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputError">
+      <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+    </div>
+  </div>
+</form>
+      
+</div>
+</div>
+</div>
+</div>
+
+<!-- DATA VISUALIZATION -->
+<div class="row" style="padding-bottom: 150px">
+<div class="col-sm-12" style="float: none; margin: 0 auto" id="DATA">
+<br><h1 style="font-size: 60px">DATA VISUALIZATION</h1>
+
+<!-- PROGRESS BARS -->
+<div class="col-sm-4">
+<h4>PROGRESS BARS</h4>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+  aria-valuemin="0" aria-valuemax="100" style="width:40%">
+    40% Complete (success)
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+  aria-valuemin="0" aria-valuemax="100" style="width:50%">
+    50% Complete (info)
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+  aria-valuemin="0" aria-valuemax="100" style="width:60%">
+    60% Complete (warning)
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    70% Complete (danger)
+  </div>
+</div>
+</div>
+<div class="col-sm-4">
+<h4>STRIPED BARS</h4>
+<div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+    40% Complete (success)
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+    50% Complete (info)
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+    60% Complete (warning)
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar"
+  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    70% Complete (danger)
+  </div>
+</div>
+</div>
+<div class="col-sm-4">
+<h4>ANIMATED BARS</h4>
+<div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+    40% Complete (success)
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+    50% Complete (info)
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+    60% Complete (warning)
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    70% Complete (danger)
+  </div>
+</div>
+</div>
+
+<!-- BASIC TABLE -->
+<div class="col-sm-6">
+<h4>BASIC TABLE</h4>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Animal</th>
+        <th>Species</th>
+        <th>Genus</th>
+        <th>Family</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Grizzly Bears</td>
+        <td>Brown Bear</td>
+        <td>Ursus</td>
+        <td>Ursidae</td>
+      </tr>      
+      <tr>
+        <td>North American Cougars</td>
+        <td>Cougar</td>
+        <td>Puma</td>
+        <td>Felidae</td>
+      </tr>
+      <tr>
+        <td>Canada Lynx</td>
+        <td>Lynx</td>
+        <td>Lynx</td>
+        <td>Felidae</td>
+      </tr>
+      <tr>
+        <td>Elk</td>
+        <td>Canadensis</td>
+        <td>Cervidae</td>
+        <td>Cervus</td>
+      </tr>
+      <tr>
+        <td>Bighorn Sheep</td>
+        <td>Canadensis</td>
+        <td>Ovis</td>
+        <td>Bovidae</td>
+      </tr>
+      <tr>
+        <td>Ospreys</td>
+        <td>Haliaetus</td>
+        <td>Pandion</td>
+        <td>Pandionidae</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- BASIC TABLE -->
+<div class="col-sm-6">
+<h4>CONTEXTUAL TABLE</h4>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Animal</th>
+        <th>Species</th>
+        <th>Genus</th>
+        <th>Family</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Grizzly Bears</td>
+        <td>Brown Bear</td>
+        <td>Ursus</td>
+        <td>Ursidae</td>
+      </tr>      
+      <tr class="success">
+
+        <td>North American Cougars</td>
+        <td>Cougar</td>
+        <td>Puma</td>
+        <td>Felidae</td>
+      </tr>
+      <tr class="danger">
+        <td>Canada Lynx</td>
+        <td>Lynx</td>
+        <td>Lynx</td>
+        <td>Felidae</td>
+      </tr>
+      <tr class="warning">
+        <td>Elk</td>
+        <td>Canadensis</td>
+        <td>Cervidae</td>
+        <td>Cervus</td>
+      </tr>
+      <tr class="info">
+        <td>Bighorn Sheep</td>
+        <td>Canadensis</td>
+        <td>Ovis</td>
+        <td>Bovidae</td>
+      </tr>
+      <tr class="active">
+        <td>Ospreys</td>
+        <td>Haliaetus</td>
+        <td>Pandion</td>
+        <td>Pandionidae</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<!-- FOOTER -->
+<div align="center" class="col-sm-12">
+<a href="https://github.com/philasyr" style="text-decoration: none; background-color: none"><h6>Made by PHIL {a} SYR</h6></a>
+</div>
+</body>
+</html>
