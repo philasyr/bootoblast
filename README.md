@@ -5,7 +5,7 @@
 bootoblast is a bunch of bootstrap stylesheets. They completely replace the standard bootstrap.css file.
 
 # usage
-download any of the CSS files. The css files can completely replace the standard bootstrap.css file.
+download any of the CSS files. The css files can completely override the standard bootstrap.css file, or placed along side.
 
 # copyright and license
 
