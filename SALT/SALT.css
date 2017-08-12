@@ -12,7 +12,7 @@ details,
 figcaption,
 figure,
 footer,
-header,
+header,modal
 hgroup,
 main,
 menu,
@@ -5960,7 +5960,7 @@ button.close {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #ff6917;
+  border-bottom: 1px solid #101010;
 }
 .modal-header .close {
   margin-top: -2px;
@@ -5976,7 +5976,7 @@ button.close {
 .modal-footer {
   padding: 20px;
   text-align: right;
-  border-top: 1px solid #ff6917;
+  border-top: 1px solid #101010;
 }
 .modal-footer .btn + .btn {
   margin-left: 5px;

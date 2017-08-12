@@ -5367,7 +5367,7 @@ button.list-group-item-success:hover,
 a.list-group-item-success:focus,
 button.list-group-item-success:focus {
   color: #ffffff;
-  background-color: #669a00;
+  background-color: #00c94c;
 }
 a.list-group-item-success.active,
 button.list-group-item-success.active,
@@ -6924,7 +6924,7 @@ a.list-group-item-success.active {
 }
 a.list-group-item-success.active:hover,
 a.list-group-item-success.active:focus {
-  background-color: #669a00;
+  background-color: #00c94c;
 }
 a.list-group-item-warning.active {
   background-color: #ffec1b;

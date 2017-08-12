@@ -1,4 +1,4 @@
-btnhtml {
+tbtnhtml {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -3912,8 +3912,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   color: #888888;
   text-align: center;
-  background-color: #424242;
-  border: 1px solid #292929;
+  background-color: #1c2141;
+  border: 1px solid #0d1022;
   border-radius: 0px;
 }
 .input-group-addon.input-sm {
@@ -6062,7 +6062,7 @@ button.close {
   padding: 3px 8px;
   color: #888888;
   text-align: center;
-  background-color: #0c0c0c;
+  background-color: #1c2141;
   border-radius: 0px;
 }
 .tooltip-arrow {
@@ -6152,7 +6152,7 @@ button.close {
   word-spacing: normal;
   word-wrap: normal;
   font-size: 14px;
-  background-color: #2c2c2c;
+  background-color: #1c2141;
   color: #888888;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
