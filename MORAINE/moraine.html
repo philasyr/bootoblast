@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Moraine | Bootôblast</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+<!-- bootöblast -->
+<link href="moraine.css" rel="stylesheet">
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<!-- Bootstrap Javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<style>
+#moraine {
+font-size:9rem;
+line-height:.8;
+	}
+
+body {
+position: relative;
+}
+	
+body, html {
+height: 100%;
+margin: 0;
+}
+
+#subhead {
+font-size: 1.75rem;
+}
+
+.anchor {
+padding-top: 85px;
+}
+
+.fontawesome {
+color: #a8f6ff;
+padding-bottom: 50px;
+}
+	
+.hero-image {
+background-image:
+linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 61, 117, 1)),
+url('moraine.jpg');height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.hero-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+	
+::selection {
+color: #000f1d;
+background: #a8f6ff;
+}
+	
+.sticky {
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+padding: 20px;
+}
+
+.break {
+width: 100px;
+height: 5px;
+background-color: #00284c;
+margin: 40px 0 40px 0;
+}
+
+.invisible {
+width: 100px;
+background-color: none;
+}
+
+.progress {
+  margin-bottom: 10px;
+}
+</style>
+</head>
+<body data-spy="scroll" data-target="#scroll" data-offset="1">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="https://bootoblast.com/index.html">bootôblast</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <i class="fas fa-angle-down"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Themes</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="https://bootoblast.com/1.0/columbia/columbia.html"><i class="fas fa-star"></i> Columbia</a>
+        <a class="dropdown-item" href="https://bootoblast.com/1.0/dew/dew.html"><i class="fas fa-tint"></i> Dew</a>
+        <a class="dropdown-item active" href="https://bootoblast.com/1.0/moraine/moraine.html"><i class="fas fa-tree"></i> Moraine</a>
+		<a class="dropdown-item" href="https://bootoblast.com/1.0/neptune/neptune.html"><i class="fas fa-water"></i> Neptune</a>
+		<a class="dropdown-item" href="https://bootoblast.com/1.0/pang/pang.html"><i class="fas fa-snowflake"></i> Pang</a>
+		<a class="dropdown-item" href="https://bootoblast.com/1.0/pata/pata.html"><i class="fas fa-fish"></i> Pata</a>
+		<a class="dropdown-item" href="https://bootoblast.com/1.0/quaker/quaker.html"><i class="fas fa-bell"></i> Quaker</a>
+		<a class="dropdown-item" href="https://bootoblast.com/1.0/rebel/rebel.html"><i class="fas fa-space-shuttle"></i> Rebel</a>
+		<a class="dropdown-item" href="https://bootoblast.com/1.0/salt/salt.html"><i class="fab fa-dribbble"></i> Salt</a>
+		<a class="dropdown-item" href="https://bootoblast.com/1.0/yucca/yucca.html"><i class="fas fa-sun"></i> Yucca</a>				 
+      </div>
+    </li>
+		
+	<li class="nav-item">
+      <a class="nav-link" href="https://bootoblast.com/index.html#GetStarted">Get Started</a>
+    </li>
+		
+	<li class="nav-item">
+      <a class="nav-link" href="https://github.com/philasyr"><i class="fab fa-github"></i></a>
+    </li>
+
+  </ul>
+  </div> 
+</nav>
+<div class="hero-image">
+<div class="hero-text">
+	
+<h1 id="moraine">MORAINE</h1>
+<p id="subhead">A Bootstrap style sheet dedicated to Banff, AB.</p>
+
+<div class="btn-group">
+<a href="https://bootoblast.com/1.0/moraine/moraine.css" class="btn btn-primary">DOWNLOAD</a>
+<div class="btn-group">
+<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><i class="fas fa-tasks"></i> ELEMENTS</button>
+
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#NAVIGATION"><i class="fas fa-bars"></i> Navigation</a>
+<a class="dropdown-item" href="#COLORS"><i class="fas fa-swatchbook"></i> Colors</a>
+<a class="dropdown-item" href="#TYPOGRAPHY"><i class="fas fa-quote-left"></i> Typography</a>
+<a class="dropdown-item" href="#BUTTONS"><i class="far fa-hand-point-up"></i> Buttons</a>
+<a class="dropdown-item" href="#CONTAINERS"><i class="far fa-square"></i> Containers</a>
+<a class="dropdown-item" href="#INPUTS"><i class="fas fa-clipboard-check"></i> Inputs & Forms</a>
+<a class="dropdown-item" href="#DATA"><i class="fas fa-table"></i> Data Visualization</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-2">
+<div class="sticky">
+<nav style="margin-top: 75px">
+<ul id="scroll" class="nav nav-pills flex-column">
+<li class="nav-item"><a class="nav-link active" href="#NAVIGATION"><i class="fas fa-bars"></i> NAVIGATION</a></li>
+<li class="nav-item"><a class="nav-link" href="#COLORS"><i class="fas fa-swatchbook"></i> COLORS</a></li>
+<li class="nav-item"><a class="nav-link" href="#TYPOGRAPHY"><i class="fas fa-quote-left"></i> TYPOGRAPHY</a></li>
+<li class="nav-item"><a class="nav-link" href="#BUTTONS"><i class="far fa-hand-point-up"></i> BUTTONS</a></li>
+<li class="nav-item"><a class="nav-link" href="#CONTAINERS"><i class="far fa-square"></i> CONTAINERS</a></li>
+<li class="nav-item"><a class="nav-link" href="#INPUTS"><i class="fas fa-clipboard-check"></i> INPUTS & FORMS</a></li>
+<li class="nav-item"><a class="nav-link" href="#DATA"><i class="fas fa-table"></i> DATA VISUALIZATION</a></li>
+</ul>
+</nav>
+</div>
+</div>
+
+<div class="col-sm-10">
+
+<!-- NAVIGATION -->
+<div class="anchor" id="NAVIGATION">
+<h1><i class="fas fa-bars"></i> NAVIGATION</h1>
+<div class="row" style="padding-bottom: 150px">
+<div class="col-sm-8 col-8"><h4>NAVBARS</h4>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 5px">
+<a class="navbar-brand" href="#"><i class="fas fa-tree"></i> MORAINE</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a>
+<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Something else here</a></div>
+</li>
+
+<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+</ul>
+</div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary" style="margin-bottom: 5px">
+<a class="navbar-brand" href="#"><i class="fas fa-tree"></i> MORAINE</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="#">Action</a>
+<a class="dropdown-item" href="#">Another action</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">Something else here</a>
+</div>
+</li>
+
+<li class="nav-item">
+<a class="nav-link disabled" href="#">Disabled</a>
+</li>
+</ul>
+</div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary" style="margin-bottom: 5px">
+<a class="navbar-brand" href="#"><i class="fas fa-tree"></i> MORAINE</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item active">
+<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+</li>
+	
+<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="#">Action</a>
+<a class="dropdown-item" href="#">Another action</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">Something else here</a>
+</div>
+</li>
+
+<li class="nav-item">
+<a class="nav-link disabled" href="#">Disabled</a>
+</li>
+</ul>
+</div>
+</nav>	
+</div>
+	
+<div class="col-sm-4 col-4"><h4>BREADCRUMBS</h4>
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item active" aria-current="page">Banff</li>
+</ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">Banff</a></li>
+<li class="breadcrumb-item active" aria-current="page">Alberta</li>
+</ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">Banff</a></li>
+<li class="breadcrumb-item"><a href="#">Alberta</a></li>
+<li class="breadcrumb-item active" aria-current="page">Canada</li>
+</ol>
+</nav>
+</div>	
+
+<div class="col-sm-12 col-12"><hr align="left" class="break"></div>
+	
+<div class="col-sm-4 col-4"><h4>BADGES</h4>
+<h1>Banff, Canada <span class="badge badge-secondary">1885</span></h1>
+<h2>Banff, Canada <span class="badge badge-secondary">1885</span></h2>
+<h3>Banff, Canada <span class="badge badge-secondary">1885</span></h3>
+<h4>Banff, Canada <span class="badge badge-secondary">1885</span></h4>
+<h5>Banff, Canada <span class="badge badge-secondary">1885</span></h5>
+<h6>Banff, Canada <span class="badge badge-secondary">1885</span></h6>
+</div>
+
+<div class="col-sm-5 col-4">
+<h4>CONTEXTUAL BADGES</h4>
+<span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light">Light</span>
+<span class="badge badge-dark">Dark</span>
+
+<hr class="invisible">
+
+<h4>PILL BADGES</h4>
+<span class="badge badge-pill badge-default">Default</span>
+<span class="badge badge-pill badge-primary">Primary</span>
+<span class="badge badge-pill badge-success">Success</span>
+<span class="badge badge-pill badge-info">Info</span>
+<span class="badge badge-pill badge-warning">Warning</span>
+<span class="badge badge-pill badge-danger">Danger</span>
+    </div>
+
+<div class="col-sm-3 col-4">
+
+<h4>BADGE INSIDE ELEMENT</h4>
+<button type="button" class="btn btn-primary">Messages <span class="badge badge-secondary">22</span></button>
+<button type="button" class="btn btn-secondary">Messages <span class="badge badge-primary">22</span></button>	
+</div>
+
+<div class="col-sm-12 col-12"><hr align="left" class="break"></div>
+	
+<div class="col-sm-5">
+<h4>PAGINATION</h4>
+
+<nav aria-label="Page navigation example">
+<ul class="pagination pagination-sm">
+<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+<li class="page-item active"><a class="page-link" href="#">1</a></li>
+<li class="page-item"><a class="page-link" href="#">2</a></li>
+<li class="page-item"><a class="page-link" href="#">3</a></li>
+<li class="page-item"><a class="page-link" href="#">4</a></li>
+<li class="page-item"><a class="page-link" href="#">5</a></li>
+<li class="page-item"><a class="page-link" href="#">6</a></li>
+<li class="page-item"><a class="page-link" href="#">7</a></li>
+<li class="page-item"><a class="page-link" href="#">8</a></li>
+<li class="page-item"><a class="page-link" href="#">9</a></li>
+<li class="page-item"><a class="page-link" href="#">10</a></li>
+<li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+</nav>
+
+<nav aria-label="Page navigation example">
+<ul class="pagination">
+<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+<li class="page-item"><a class="page-link" href="#">1</a></li>
+<li class="page-item active"><a class="page-link" href="#">2</a></li>
+<li class="page-item"><a class="page-link" href="#">3</a></li>
+<li class="page-item"><a class="page-link" href="#">4</a></li>
+<li class="page-item"><a class="page-link" href="#">5</a></li>
+<li class="page-item"><a class="page-link" href="#">6</a></li>
+<li class="page-item"><a class="page-link" href="#">7</a></li>
+<li class="page-item"><a class="page-link" href="#">8</a></li>
+<li class="page-item"><a class="page-link" href="#">9</a></li>
+<li class="page-item"><a class="page-link" href="#">10</a></li>
+
+<li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+</nav>
+
+<nav aria-label="Page navigation example">
+<ul class="pagination pagination-lg">
+<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+<li class="page-item"><a class="page-link" href="#">1</a></li>
+<li class="page-item"><a class="page-link" href="#">2</a></li>
+<li class="page-item active"><a class="page-link" href="#">3</a></li>
+<li class="page-item"><a class="page-link" href="#">4</a></li>
+<li class="page-item"><a class="page-link" href="#">5</a></li>
+<li class="page-item"><a class="page-link" href="#">6</a></li>
+<li class="page-item"><a class="page-link" href="#">7</a></li>
+<li class="page-item"><a class="page-link" href="#">8</a></li>
+<li class="page-item"><a class="page-link" href="#">9</a></li>
+<li class="page-item"><a class="page-link" href="#">10</a></li>
+<li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+</nav>
+	
+</div>
+
+</div>
+</div>
+
+<!-- COLORS -->
+<div class="anchor" id="COLORS">
+<h1><i class="fas fa-swatchbook"></i> COLORS</h1>
+<div class="row" style="padding-bottom: 150px; margin: 0 50px 0 0">
+<div class="col-sm-2 col-2 text-light" style="background-color: #00529e; height: 200px">BLUE</div>
+<div class="col-sm-2 col-2 text-light" style="background-color: #9676ff; height: 200px">INDIGO</div>
+<div class="col-sm-2 col-2 text-light" style="background-color: #43006d; height: 200px">PURPLE</div>
+<div class="col-sm-2 col-2 text-light" style="background-color: #c038ae; height: 200px">PINK</div>
+<div class="col-sm-2 col-2 text-light" style="background-color: #df0d52; height: 200px">RED</div>
+<div class="col-sm-2 col-2 text-light" style="background-color: #ff942c; height: 200px">ORANGE</div>
+<div class="col-sm-2 col-2 text-dark" style="background-color: #e4be26; height: 200px">YELLOW</div>
+<div class="col-sm-2 col-2 text-light" style="background-color: #4db04b; height: 200px">GREEN</div>
+<div class="col-sm-2 col-2 text-dark" style="background-color: #198e8f; height: 200px">TEAL</div>
+<div class="col-sm-2 col-2 text-dark" style="background-color: #23bbc9; height: 200px">CYAN</div>
+<div class="col-sm-2 col-2 text-dark" style="background-color: #ffffff; height: 200px">WHITE</div>
+<div class="col-sm-2 col-2 text-dark" style="background-color: #b7b7b7; height: 200px">GRAY</div>
+<div class="col-sm-2 col-2 text-light" style="background-color: #929292; height: 200px">DARK GRAY</div>
+<div class="col-sm-2 col-2 text-dark" style="background-color: #a8f6ff; height: 200px">PRIMARY</div>
+<div class="col-sm-2 col-2 text-light" style="background-color: #003d75; height: 200px">SECONDARY</div>
+<div class="col-sm-2 col-2 text-light" style="background-color: #4db04b; height: 200px">SUCCESS</div>
+<div class="col-sm-2 col-2 text-light" style="background-color: #3fb4e4; height: 200px">INFO</div>
+<div class="col-sm-2 col-2 text-dark" style="background-color: #e4be26; height: 200px">WARNING</div>
+<div class="col-sm-2 col-2 text-light" style="background-color: #df0d52; height: 200px">DANGER</div>
+<div class="col-sm-2 col-2 text-dark" style="background-color: #f0f1f2; height: 200px">LIGHT</div>
+<div class="col-sm-2 col-2 text-light" style="background-color: #000d1a; height: 200px">DARK</div>
+</div>
+</div>
+
+<!-- TYPOGRAPHY -->
+<div class="anchor" id="TYPOGRAPHY"> 
+<div class="row" style="padding-bottom: 150px">
+<div class="col-sm-12" style="float: none; margin: 0 auto">
+<h1><i class="fas fa-quote-left"></i> TYPOGRAPHY</h1>
+<div class="row">
+
+<!-- BODY COPY -->
+<div class="col-sm-12">
+<h4>BODY COPY</h4>
+<p style="max-width: 950px">Banff National Park Canada's oldest national park, established in 1885 in the Rocky Mountains. Within Banff is <mark>Moraine</mark> Lake - a glacially fed lake in Banff National Park, outside the Village of Lake Louise, Alberta, Canada. <a href="https://en.wikipedia.org/wiki/Banff_National_Park" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+
+</p>
+</div>
+
+<div class="col-sm-12 col-12"><hr align="left" class="break"></div>
+
+<!-- HEADINGS + DISLPAYS -->
+<div class="col-sm-4">
+<h4>HEADINGS</h4>
+<h1>h1 Gone Campin'</h1>
+<h2>h2 Gone Campin'</h2>
+<h3>h3 Gone Campin'</h3>
+<h4>h4 Gone Campin'</h4>
+<h5>h5 Gone Campin'</h5>
+<h6>h6 Gone Campin'</h6>
+</div>
+
+<!-- CONTEXTUAL COLORS -->
+<div class="col-sm-3">
+<h4>CONTEXTUAL COLORS</h4>
+<p class="text-muted" style="line-height: .7">This text is muted.</p>
+<p class="text-primary" style="line-height: .7">This text is important.</p>
+<p class="text-success" style="line-height: .7">This text indicates success.</p>
+<p class="text-info" style="line-height: .7">This text represents some information.</p>
+<p class="text-warning" style="line-height: .7">This text represents a warning.</p>
+<p class="text-danger" style="line-height: .7">This text represents danger.</p>
+<p class="text-secondary" style="line-height: .7">Secondary text.</p>
+<p class="text-dark" style="line-height: .7">This text is dark grey.</p>
+<p class="text-body" style="line-height: .7">Default body color.</p>
+</div>
+
+<!-- BLOCKQUOTE -->
+<div class="col-sm-5">
+<h4>BLOCKQUOTE</h4>
+<blockquote class="blockquote" style="font-size: 32px">
+<p class="mb-0">Keep close to Nature's heart... and breakclear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean.
+</p>
+<h6>- John Muir</h6>
+</blockquote>
+</div>
+
+<div class="col-sm-12 col-12"><hr align="left" class="break"></div>
+
+<!-- ICONS -->
+<div class="col-sm-12 fontawesome">
+<h4>ICONS (<a href="http://fontawesome.io/" target="_blank">FontAwesome</a>)</h4>
+<div class="row">
+<div class="col-sm-1"><i class="fas fa-atom fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-bug fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-crow fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-drum fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-connectdevelop fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-fighter-jet fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-galactic-republic fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-life-ring fa-3x"></i></div>
+<div class="col-sm-1"><i class="far fa-lemon fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-bomb fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-gitlab fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-hooli fa-3x"></i></div>
+
+<div class="col-sm-12 col-12"><hr class="invisible"></div>
+
+<div class="col-sm-1"><i class="fas fa-poo fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-quidditch fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-qq fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-socks fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-mobile-alt fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-linode fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-hotjar fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-mailchimp fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-teeth fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-square-root-alt fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-playstation fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-lightbulb fa-3x"></i></div>
+
+<div class="col-sm-12 col-12"><hr class="invisible"></div>
+
+<div class="col-sm-1"><i class="fab fa-node fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-pastafarianism fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-jedi fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-magnet fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-glasses fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-shield-alt fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-prescription-bottle fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-futbol fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-cubes fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-coffee fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-air-freshener fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-vial fa-3x"></i></div>
+
+<div class="col-sm-12 col-12"><hr class="invisible"></div>
+
+<div class="col-sm-1"><i class="fab fa-xbox fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-wine-glass fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-tv fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-frog fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-codepen fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-neos fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-recycle fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-hand-point-up fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-headphones-alt fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-truck-monster fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-ruler fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-dribbble fa-3x"></i></div>
+
+<div class="col-sm-12 col-12"><hr class="invisible"></div>
+
+<div class="col-sm-1"><i class="fab fa-ethereum fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-gamepad fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-key fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-creative-commons-nd fa-3x"></i></div>
+<div class="col-sm-1"><i class="fab fa-periscope fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-haykal fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-dumbbell fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-chess fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-money-bill-wave fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-redo-alt fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-space-shuttle fa-3x"></i></div>
+<div class="col-sm-1"><i class="fas fa-cookie fa-3x"></i></div>
+
+</div>
+</div>	
+</div>
+</div>
+</div>
+</div>
+
+<!-- BUTTONS -->
+<div class="anchor" id="BUTTONS">
+<h1><i class="far fa-hand-point-up"></i> BUTTONS</h1>
+<div class="row" style="padding-bottom: 150px">
+<div class="col-sm-7">
+<h4>BUTTONS</h4>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-light">Light</button>
+		
+<hr class="invisible">
+		
+<h4>OUTLINE BUTTONS</h4>
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+</div>
+	
+<div class="col-sm-3">
+<h4>VERTICAL BUTTONS</h4>
+<div class="btn-group-vertical" style="width: 100%">
+<button type="button" class="btn btn-secondary">Vertical Buttons</button>
+<button type="button" class="btn btn-secondary">Vertical Buttons</button>
+<button type="button" class="btn btn-secondary">Vertical Buttons</button>
+<button type="button" class="btn btn-secondary">Vertical Buttons</button>
+</div>
+</div>
+
+<div class="col-sm-12 col-12"><hr align="left" class="break"></div>
+
+<div class="col-sm-3">
+<h4>BUTTON GROUPS</h4>
+<div class="btn-group">
+<button type="button" class="btn btn-primary btn-lg">LEFT</button>
+<button type="button" class="btn btn-primary btn-lg">CENTER</button>
+<button type="button" class="btn btn-primary btn-lg">RIGHT</button>
+</div>
+</div>
+
+<div class="col-sm-4">
+<h4>POPOVERS</h4>
+<a href="#1" class="btn btn-primary btn-lg" title="Header" data-toggle="popover" data-placement="left" data-content="Is that a grizzly bear?">LEFT</a>
+<a href="#1" class="btn btn-primary btn-lg" title="Header" data-toggle="popover" data-placement="right" data-content="Is that a grizzly bear?">RIGHT</a>
+<a href="#1" class="btn btn-primary btn-lg" title="Header" data-toggle="popover" data-placement="top" data-content="Is that a grizzly bear?">TOP</a>
+<a href="#1" class="btn btn-primary btn-lg" title="Header" data-toggle="popover" data-placement="bottom" data-content="Is that a grizzly bear?">BOTTOM</a>
+</div>
+
+<div class="col-sm-4">
+<h4>TOOLTIPS</h4>
+<a href="#11" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="left" title="Pine trees on the left!">LEFT</a>
+<a href="#11" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="right" title="Pine trees on the right!">RIGHT</a>
+<a href="#11" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Pine trees on the top!">TOP</a>
+<a href="#11" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="bottom" title="Pine trees on the bottom!">BOTTOM</a>
+</div>
+
+<div class="col-sm-12 col-12"><hr align="left" class="break"></div>
+
+<div class="col-sm-3">
+<h4>BUTTON NESTING</h4>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+<button type="button" class="btn btn-secondary btn-lg">1</button>
+<button type="button" class="btn btn-secondary btn-lg">2</button>
+<button type="button" class="btn btn-secondary btn-lg">3</button>
+
+<div class="btn-group" role="group">
+<button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Dropdown
+</button>
+<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<a class="dropdown-item" href="#">Dropdown link</a>
+<a class="dropdown-item" href="#">Dropdown link</a>
+</div>
+</div>
+</div>
+	
+</div>
+
+<div class="col-sm-3">
+<h4>CHECKBOXES</h4>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label class="btn btn-primary btn-lg active">
+<input type="checkbox" checked="" autocomplete="off"> Active
+</label>
+<label class="btn btn-primary btn-lg">
+<input type="checkbox" autocomplete="off"> Check
+</label>
+<label class="btn btn-primary btn-lg">
+<input type="checkbox" autocomplete="off"> Check
+</label>
+</div>
+</div>
+
+<div class="col-sm-3">
+<h4>RADIO BUTTONS</h4>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label class="btn btn-primary btn-lg active">
+<input type="radio" name="options" id="option1" autocomplete="off" checked=""> Active
+</label>
+<label class="btn btn-primary btn-lg">
+<input type="radio" name="options" id="option2" autocomplete="off"> Radio
+</label>
+<label class="btn btn-primary btn-lg">
+<input type="radio" name="options" id="option3" autocomplete="off"> Radio
+</label>
+</div>
+</div>
+
+<div class="col-sm-3">
+<h4>BUTTON SIZES</h4>
+<button type="button" class="btn btn-primary btn-lg">Large</button>
+<button type="button" class="btn btn-primary">Default</button>
+<button type="button" class="btn btn-primary btn-sm">Small</button>
+</div>
+	
+</div>
+</div>
+
+<!-- CONTAINERS -->
+<div class="anchor" id="CONTAINERS"> 
+<h1><i class="far fa-square"></i> CONTAINERS</h1>
+<h4>JUMBOTRON</h4>
+<div class="row" style="padding-bottom: 150px">
+<div class="col-sm-12">
+<div class="jumbotron">
+<h1 style="font-size: 5rem">JUMBOTRON <i class="fas fa-tree"></i></h1> 
+<h3 style="color: #ffffff">This jumbotron is made of 100% pine wood.
+
+</h3>
+<br>
+<button type="button" class="btn btn-primary btn-lg"><i class="fas fa-leaf"></i> Fresh Air</button>
+</div>
+</div>
+
+<div class="col-sm-6">
+<h4>ALERTS</h4>
+<div class="alert alert-success alert-dismissible">
+<button type="button" class="close" data-dismiss="alert"><i class="fas fa-times-circle"></i></button>
+<strong>Success!</strong>  My canoe still floats! <a href="#" class="alert-link">read more ...</a>
+</div>
+<div class="alert alert-info alert-dismissible">
+<button type="button" class="close" data-dismiss="alert"><i class="fas fa-times-circle"></i></button>
+<strong>Info!</strong> Here's some deets. Could be good or bad. <a href="#" class="alert-link">read more ...</a>
+</div>
+<div class="alert alert-warning alert-dismissible">
+<button type="button" class="close" data-dismiss="alert"><i class="fas fa-times-circle"></i></button>
+<strong>Warning!</strong> It may rain later. <a href="#" class="alert-link">read more ...</a>
+</div>
+<div class="alert alert-danger alert-dismissible">
+<button type="button" class="close" data-dismiss="alert"><i class="fas fa-times-circle"></i></button>
+<strong>Danger!</strong> That grizzly's comin' right for you! <a href="#" class="alert-link">read more ...</a>
+</div>
+</div>
+
+<div class="col-sm-6">
+<h4>&nbsp;</h4>
+<div class="alert alert-primary alert-dismissible">
+<button type="button" class="close" data-dismiss="alert"><i class="fas fa-times-circle"></i></button>
+<strong>Primary!</strong> Oh good gravy! <a href="#" class="alert-link">read more ...</a>
+</div>
+<div class="alert alert-secondary alert-dismissible">
+<button type="button" class="close" data-dismiss="alert"><i class="fas fa-times-circle"></i></button>
+<strong>Secondary!</strong> Not too too important. <a href="#" class="alert-link">read more ...</a>
+</div>
+<div class="alert alert-dark alert-dismissible">
+<button type="button" class="close" data-dismiss="alert"><i class="fas fa-times-circle"></i></button>
+<strong>Dark!</strong> Dark grey alert. <a href="#" class="alert-link">read more ...</a>
+</div>
+<div class="alert alert-light alert-dismissible">
+<button type="button" class="close" data-dismiss="alert"><i class="fas fa-times-circle"></i></button>
+<strong>Light!</strong> Light grey alert. <a href="#" class="alert-link">read more ...</a>
+</div>
+</div>
+
+<div class="col-sm-12 col-12"><hr align="left" class="break"></div>
+	
+<div class="col-sm-4">
+<h4>TABS</h4>
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#home">Banff</a></li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#about">About</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Geography</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" data-toggle="tab" href="#louise">Lake Louise</a>
+<a class="dropdown-item" data-toggle="tab" href="#peyto">Peyto Glacier</a>
+<a class="dropdown-item" data-toggle="tab" href="#mistaya">Mistaya River</a>
+</div>
+</li>
+</ul>
+<div id="myTabContent" class="tab-content">
+<div class="tab-pane fade show active" id="home">
+<p>Banff National Park /ˈbæmf/ is Canada's oldest national park, established in 1885 in the Rocky Mountains. The park, located west of Calgary in the province of Alberta, encompasses 6,641 square kilometres (2,564 sq mi) of mountainous terrain, with numerous glaciers and ice fields, dense coniferous forest, and alpine landscapes. The Icefields Parkway extends from Lake Louise, connecting to Jasper National Park in the north.</p>
+</div>
+<div class="tab-pane fade" id="about">
+<p>Throughout its history, Banff National Park has been shaped by tension between conservationist and land exploitation interests. The park was established on 25 November 1885 as Banff Hot Springs Reserve, in response to conflicting claims over who discovered hot springs there, and who had the right to develop the hot springs for commercial interests. The conservationists prevailed when Prime Minister John A. Macdonald set aside the hot springs as a small protected reserve, which was later expanded to include Lake Louise and other areas extending north to the Columbia Icefield.</p>
+</div>
+<div class="tab-pane fade" id="louise">
+<p>Lake Louise, named Lake of the Little Fishes by the Stoney Nakota First Nations people, is a glacial lake within Banff National Park in Alberta, Canada. It is located 5 km (3.1 mi) west of the Hamlet of Lake Louise and the Trans-Canada Highway (Highway 1). The emerald colour of the water comes from rock flour carried into the lake by melt-water from the glaciers that overlook the lake. The lake has a surface of 0.8 km2 (0.31 sq mi) and is drained through the 3 km long Louise Creek into the Bow River.</p>
+</div>
+<div class="tab-pane fade" id="peyto">
+<p>The Peyto Glacier is situated in the Canadian Rockies in Banff National Park, Alberta, Canada, approximately 90 km (56 mi) northwest of the town of Banff, and can be accessed from the Icefields Parkway. Peyto Glacier is an outflow glacier from the Wapta Icefield, which rests along the Continental divide. The glacier snout is subject to high melt rates from season to season and there is marked surface lowering on several parts of the glacier. Glacial silt, which is carried from the glacier by streams, ensures a turquoise appearance to Peyto Lake, a popular tourist destination.</p>
+</div>
+<div class="tab-pane fade" id="mistaya">
+<p>The Mistaya River is a short river in western Alberta, Canada. It flows through the Canadian Rockies, and a section of the Icefields Parkway was built along its course. Mistaya River originates in Peyto Lake, a glacial lake of typical blue colour (due to rock flour). Mistaya flows north-west, receiving the waters of creeks such as Delta, Silverhorn, Cirque, Noyes, ChephrenTotem, Epaulette, Bison, Kaufmann and Sarback. A series of elongated lakes are formed along the river: Mistaya Lake and Waterfowl Lakes.</p>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+<h4>MODAL</h4>
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Modal title</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true"><i class="fas fa-times-circle"></i></span>
+</button>
+</div>
+<div class="modal-body">
+<p>Let's Go For a Hike.</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-primary"><i class="fas fa-save"></i> SAVE</button>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+<h4>LIST GROUP WITH HEADING</h4>
+<div class="list-group">
+<a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+<div class="d-flex w-100 justify-content-between">
+<h5 class="mb-1 text-dark">List Group heading</h5>
+<small>44 days ago</small>
+</div>
+<p class="mb-1 text-dark">Study nature, love nature, stay close to nature. It will never fail you. - Frank Lloyd Wright</p>
+</a>
+<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+<div class="d-flex w-100 justify-content-between">
+<h5 class="mb-1">List Group heading</h5>
+<small class="text-muted">44 days ago</small>
+</div>
+<p class="mb-1 text-light">Study nature, love nature, stay close to nature. It will never fail you. - Frank Lloyd Wright</p>
+</a>
+</div>
+</div>
+
+<div class="col-sm-12 col-12"><hr align="left" class="break"></div>
+
+<div class="col-sm-4">
+<h4>LIST GROUP</h4>
+<div class="list-group">
+<a href="#" class="list-group-item list-group-item-action">Montane</a>
+<a href="#" class="list-group-item list-group-item-action">Subalpine</a>
+<a href="#" class="list-group-item list-group-item-action">Alpine</a>
+</div>
+</div>
+
+<div class="col-sm-4">
+<h4>LIST GROUP WITH BADGES</h4>
+<ul class="list-group">
+<li class="list-group-item d-flex justify-content-between align-items-center">Canmore<span class="badge badge-primary badge-pill">65</span></li>
+<li class="list-group-item d-flex justify-content-between align-items-center">Banff<span class="badge badge-primary badge-pill">85</span></li>
+<li class="list-group-item d-flex justify-content-between align-items-center">Duthil<span class="badge badge-primary badge-pill">45</span></li>
+</ul>
+</div>
+
+<div class="col-sm-4">
+<h4>ACTIVE ITEMS</h4>
+<ul class="list-group">
+<li class="list-group-item active">Sawback</li>
+<li class="list-group-item">Massive</li>
+<li class="list-group-item">Eldon</li>
+</ul>
+</div>
+
+<div class="col-sm-12 col-12"><hr align="left" class="break"></div>
+	
+<div class="col-sm-3">
+<h4>CARDS</h4>
+<div class="card text-dark bg-primary mb-3">
+<div class="card-header">Header</div>
+<div class="card-body">
+<h4 class="card-title text-dark">Primary card title</h4>
+<p class="card-text text-dark">Lookee here a Big Horn!</p>
+</div>
+</div>
+<div class="card text-dark bg-secondary mb-3">
+<div class="card-header text-white">Header</div>
+<div class="card-body">
+<h4 class="card-title text-white">Secondary card title</h4>
+<p class="card-text text-white">Lookee here a Big Horn!</p>
+</div>
+</div>
+<div class="card text-white bg-success mb-3">
+<div class="card-header">Header</div>
+<div class="card-body">
+<h4 class="card-title text-white">Success card title</h4>
+<p class="card-text">Lookee here a Big Horn!</p>
+</div>
+</div>
+<div class="card text-white bg-danger mb-3">
+<div class="card-header">Header</div>
+<div class="card-body">
+<h4 class="card-title text-white">Danger card title</h4>
+<p class="card-text">Lookee here a Big Horn!</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<h4>&nbsp</h4>
+<div class="card text-white bg-warning mb-3">
+<div class="card-header">Header</div>
+<div class="card-body">
+<h4 class="card-title text-white">Warning card title</h4>
+<p class="card-text">Lookee here a Big Horn!</p>
+</div>
+</div>
+<div class="card text-white bg-info mb-3">
+<div class="card-header">Header</div>
+<div class="card-body">
+<h4 class="card-title text-white">Info card title</h4>
+<p class="card-text">Lookee here a Big Horn!</p>
+</div>
+</div>
+<div class="card bg-light mb-3">
+<div class="card-header text-dark">Header</div>
+<div class="card-body">
+<h4 class="card-title text-dark">Light card title</h4>
+<p class="card-text text-dark">Lookee here a Big Horn!</p>
+</div>
+</div>
+<div class="card text-white bg-dark mb-3">
+<div class="card-header">Header</div>
+<div class="card-body">
+<h4 class="card-title">Dark card title</h4>
+<p class="card-text">Lookee here a Big Horn!</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<h4>&nbsp</h4>
+<div class="card border-primary mb-3">
+<div class="card-header text-dark">Header</div>
+<div class="card-body">
+<h4 class="card-title text-dark">Primary card title</h4>
+<p class="card-text text-dark">Lookee here a Big Horn!</p>
+</div>
+</div>
+<div class="card border-secondary mb-3">
+<div class="card-header text-dark">Header</div>
+<div class="card-body">
+<h4 class="card-title text-dark">Secondary card title</h4>
+<p class="card-text text-dark">Lookee here a Big Horn!</p>
+</div>
+</div>
+<div class="card border-success mb-3">
+<div class="card-header text-dark">Header</div>
+<div class="card-body">
+<h4 class="card-title text-success">Success card title</h4>
+<p class="card-text text-dark">Lookee here a Big Horn!</p>
+</div>
+</div>
+<div class="card border-danger mb-3">
+<div class="card-header text-dark">Header</div>
+<div class="card-body">
+<h4 class="card-title text-danger">Danger card title</h4>
+<p class="card-text text-dark">Lookee here a Big Horn!</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<h4>&nbsp</h4>
+<div class="card border-warning mb-3">
+<div class="card-header text-dark">Header</div>
+<div class="card-body">
+<h4 class="card-title text-warning">Warning card title</h4>
+<p class="card-text text-dark">Lookee here a Big Horn!</p>
+</div>
+</div>
+<div class="card border-info mb-3">
+<div class="card-header text-dark">Header</div>
+<div class="card-body">
+<h4 class="card-title text-info">Info card title</h4>
+<p class="card-text text-dark">Lookee here a Big Horn!</p>
+</div>
+</div>
+<div class="card border-light mb-3">
+<div class="card-header text-dark">Header</div>
+<div class="card-body">
+<h4 class="card-title text-secondary">Light card title</h4>
+<p class="card-text text-dark">Lookee here a Big Horn!</p>
+</div>
+</div>
+<div class="card border-dark mb-3">
+<div class="card-header text-dark">Header</div>
+<div class="card-body">
+<h4 class="card-title text-dark">Dark card title</h4>
+<p class="card-text text-dark">Lookee here a Big Horn!</p>
+</div>
+</div>
+</div>	
+</div>
+</div>
+
+<!-- INPUTS & FORMS -->
+<div class="anchor" id="INPUTS"> 
+<h1><i class="fas fa-clipboard-check"></i> INPUTS & FORMS</h1>
+<div class="row" style="padding-bottom: 150px">
+<div class="col-sm-5">
+<h4>FORMS</h4>
+<div class="card bg-secondary mb-3">
+<div class="card-body">
+<form>
+<div class="form-group">
+<label for="exampleInputEmail1">Email address</label>
+<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1">Password</label>
+<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+</div>
+<label class="form-control-label" for="inputSuccess1">Valid input</label>
+<div class="form-group has-success">
+<input type="text" value="correct value" class="form-control is-valid" id="inputValid">
+<div class="valid-feedback">Success! You've done it.</div>
+</div>
+<div class="form-group has-danger">
+<label class="form-control-label" for="inputDanger1">Invalid input</label>
+<input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
+<div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
+</div>
+<div class="form-group">
+<label for="exampleSelect1">Example select</label>
+<select class="form-control" id="exampleSelect1">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</div>
+<div class="form-group">
+<label for="exampleSelect2">Example multiple select</label>
+<select multiple class="form-control" id="exampleSelect2" size="2">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</div>
+<div class="form-group">
+<label for="exampleTextarea">Example textarea</label>
+<textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
+</div>
+<fieldset class="form-group">
+<label for="form-checkbox-radiobuttons">Checkboxes and Radio Buttons</label>
+<div class="form-check">
+<label class="form-check-label">
+<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+Radio button option 1
+</label>
+</div>
+<div class="form-check">
+<label class="form-check-label">
+<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+Radio button option 2
+</label>
+</div>
+</fieldset>
+<div class="form-check">
+<label class="form-check-label">
+<input type="checkbox" class="form-check-input">
+Check me out
+</label>
+</div>
+<br>
+<button type="submit" class="btn btn-primary">Submit</button>
+<button type="submit" class="btn btn-secondary">Cancel</button>
+</form>
+</div>
+</div>
+</div>
+
+<div class="col-sm-5">
+<h4>INPUTS</h4>
+<div class="card bg-secondary mb-3">
+<div class="card-body text-light">
+<div class="form-group">
+<label for="input-checkbox-radiobuttons">Checkboxes and Radio Buttons</label>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<div class="input-group-text">
+<input type="checkbox" aria-label="Checkbox for following text input">
+</div>
+</div>
+<input type="text" class="form-control" aria-label="Text input with checkbox">
+</div>
+</div>
+
+<div class="input-group">
+<div class="input-group-prepend">
+<div class="input-group-text">
+<input type="radio" aria-label="Radio button for following text input">
+</div>
+</div>
+<input type="text" class="form-control" aria-label="Text input with radio button">
+</div>
+<br>
+<label for="basic-examples">Basic Example</label>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text bg-primary text-dark" id="basic-addon3">Name</span>
+</div>
+<input type="text" class="form-control" id="name" aria-describedby="basic-addon3">
+</div>
+
+<label class="form-control-label" for="buttonInputs">Button Inputs</label>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Action</a>
+<a class="dropdown-item" href="#">Another action</a>
+<a class="dropdown-item" href="#">Something else here</a>
+<div role="separator" class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">Separated link</a>
+</div>
+</div>
+<input type="text" class="form-control" aria-label="Text input with dropdown button">
+</div>	
+
+<form>
+<label class="form-control-label" for="buttonInputs">Input Sizes</label>
+<div class="input-group mb-3 input-group-sm">
+<div class="input-group-prepend">
+<span class="input-group-text bg-primary text-dark">Small</span>
+</div>
+<input type="text" class="form-control">
+</div>
+</form>
+
+<form>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text bg-primary text-dark">Default</span>
+</div>
+<input type="text" class="form-control">
+</div>
+</form>
+
+<form>
+<div class="input-group mb-3 input-group-lg">
+<div class="input-group-prepend">
+<span class="input-group-text bg-primary text-dark">Large</span>
+</div>
+<input type="text" class="form-control">
+</div>
+</form>
+
+<fieldset>
+  <legend>Custom forms</legend>
+<form>
+  <input type="range" class="custom-range" id="customRange" name="points1">
+</form>
+  <div class="form-group">
+    <div class="custom-control custom-radio">
+      <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+      <label class="custom-control-label" for="customRadio1">Toggle for custom radio</label>
+    </div>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+      <label class="custom-control-label" for="customRadio2">Toggle for custom radio</label>
+    </div>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled="">
+      <label class="custom-control-label" for="customRadio3">Disabled custom radio</label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+      <label class="custom-control-label" for="customCheck1">Custom checkbox</label>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck2" disabled="">
+      <label class="custom-control-label" for="customCheck2">Disabled custom checkbox</label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+      <label class="custom-control-label" for="customSwitch1">Custom switch</label>
+    </div>
+    <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" disabled="" id="customSwitch2">
+      <label class="custom-control-label" for="customSwitch2">Disabled custom switch</label>
+    </div>
+  </div>
+</fieldset>
+
+<form>
+  <select name="cars" class="custom-select">
+    <option selected>Custom Select Menu</option>
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="auoption3di">Option 3</option>
+  </select>
+</form>
+
+<br>
+    
+<form>
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="customFile">
+    <label class="custom-file-label" for="customFile">Choose file</label>
+  </div>
+</form>
+
+<script>
+// Add the following code if you want the name of the file appear on select
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+</script>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- DATA VISUALIZATION -->
+<div class="anchor" id="DATA"> 
+<h1><i class="fas fa-table"></i> DATA VISUALIZATION</h1>
+<div class="row" style="padding-bottom: 150px">
+<div class="col-sm-4">
+<h4>PROGRESS BARS</h4>
+<div class="progress"><div class="progress-bar text-dark" style="width:19%">19%</div></div>
+<div class="progress"><div class="progress-bar bg-success" style="width:38%">38%</div></div>
+<div class="progress"><div class="progress-bar bg-info" style="width:57%">57%</div></div>
+<div class="progress"><div class="progress-bar bg-warning" style="width:76%">76%</div></div>
+<div class="progress"><div class="progress-bar bg-danger" style="width:95%">95%</div></div>
+</div>
+
+<div class="col-sm-4">
+<h4>STRIPED PROGRESS BARS</h4>
+<div class="progress"><div class="progress-bar text-dark progress-bar-striped" style="width:19%">19%</div></div>
+<div class="progress"><div class="progress-bar progress-bar-striped bg-success" style="width:38%">38%</div></div>
+<div class="progress"><div class="progress-bar progress-bar-striped bg-info" style="width:57%">57%</div></div>
+<div class="progress"><div class="progress-bar progress-bar-striped bg-warning" style="width:76%">76%</div></div>
+<div class="progress"><div class="progress-bar progress-bar-striped bg-danger" style="width:95%">95%</div></div>
+</div>
+
+<div class="col-sm-4">
+<h4>ANIMATED PROGRESS BARS</h4>
+<div class="progress"><div class="progress-bar text-dark progress-bar-striped progress-bar-animated" style="width: 19%">19%</div></div>
+<div class="progress"><div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:38%">38%</div></div>
+<div class="progress"><div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:57%">57%</div></div>
+<div class="progress"><div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:76%">76%</div></div>
+<div class="progress"><div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:95%">95%</div></div>
+</div>
+
+<div class="col-sm-12 col-12"><hr align="left" class="break"></div>
+<div class="col-sm-6">
+<h4>BASIC TABLE</h4>
+<table class="table table-dark table-hover">
+<thead>
+<tr>
+<th>Animal</th>
+<th>Species</th>
+<th>Genus</th>
+<th>Family</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Grizzly Bears</td>
+<td>Brown Bear</td>
+<td>Ursus</td>
+<td>Ursidae</td>
+</tr>
+
+<tr>
+<td>North American Beavers</td>
+<td>Castor canadensis</td>
+<td>Castor</td>
+<td>Castoridae</td>
+</tr>
+
+<tr>
+<td>North American Cougars</td>
+<td>Cougar</td>
+<td>Puma</td>
+<td>Felidae</td>
+</tr>
+
+<tr>
+<td>Canada Lynx</td>
+<td>Lynx</td>
+<td>Lynx</td>
+<td>Felidae</td>
+</tr>
+
+<tr>
+<td>Elk</td>
+<td>Canadensis</td>
+<td>Cervidae</td>
+<td>Cervus</td>
+</tr>
+
+<tr>
+<td>Bighorn Sheep</td>
+<td>Canadensis</td>
+<td>Ovis</td>
+<td>Bovidae</td>
+</tr>
+
+<tr>
+<td>Ospreys</td>
+<td>Haliaetus</td>
+<td>Pandion</td>
+<td>Pandionidae</td>
+</tr>
+
+<tr>
+<td>Hoary Marmot</td>
+<td>Marmota caligata</td>
+<td>Marmota</td>
+<td>Sciuridae</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="col-sm-6">
+<h4>CONTEXTUAL TABLE</h4>
+ <table class="table table-light table-hover">
+<thead>
+<tr>
+<th>Animal</th>
+<th>Species</th>
+<th>Genus</th>
+<th>Family</th>
+</tr>
+</thead>
+
+<tbody>
+<tr class="table-primary">
+<td>Grizzly Bears</td>
+<td>Brown Bear</td>
+<td>Ursus</td>
+<td>Ursidae</td>
+</tr>
+
+<tr class="table-secondary">
+<td>North American Beavers</td>
+<td>Castor canadensis</td>
+<td>Castor</td>
+<td>Castoridae</td>
+</tr>
+
+<tr class="table-success">
+<td>North American Cougars</td>
+<td>Cougar</td>
+<td>Puma</td>
+<td>Felidae</td>
+</tr>
+
+<tr class="table-danger">
+<td>Canada Lynx</td>
+<td>Lynx</td>
+<td>Lynx</td>
+<td>Felidae</td>
+</tr>
+
+<tr class="table-info">
+<td>Elk</td>
+<td>Canadensis</td>
+<td>Cervidae</td>
+<td>Cervus</td>
+</tr>
+
+<tr class="table-warning">
+<td>Bighorn Sheep</td>
+<td>Canadensis</td>
+<td>Ovis</td>
+<td>Bovidae</td>
+</tr>
+
+<tr class="table-light">
+<td>Ospreys</td>
+<td>Haliaetus</td>
+<td>Pandion</td>
+<td>Pandionidae</td>
+</tr>
+
+<tr class="table-dark">
+<td>Hoary Marmot</td>
+<td>Marmota caligata</td>
+<td>Marmota</td>
+<td>Sciuridae</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+</div> 
+</div>
+<div align="center" class="col-sm-12">
+<a href="https://github.com/philasyr" style="text-decoration: none; background-color: none"><h6>Made by PHIL {a} SYR</h6></a>
+</div>
+</div>
+	
+<script>
+$(document).ready(function(){
+$('[data-toggle="popover"]').popover(); 
+});
+</script>
+<script>
+$(document).ready(function(){
+$('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+
+</body>
+</html>
